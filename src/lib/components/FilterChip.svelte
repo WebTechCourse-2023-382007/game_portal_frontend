@@ -22,8 +22,6 @@
 
 <style>
 	.chip {
-		padding: 0;
-		margin: 0;
 		border: 1px solid var(--md-sys-color-outline);
 		border-radius: 100px;
 		background-color: transparent;
