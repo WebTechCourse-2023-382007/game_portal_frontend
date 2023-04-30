@@ -38,11 +38,23 @@ p, h1, h2, h3, h4, h5, h6 {
 		scroll-behavior: auto !important;
 	}
 }
+
 /* Credit ends */
+
 button {
 	border: none;
 	background: none;
 	cursor: pointer;
 	outline: inherit;
 	padding: 0;
+}
+
+/* RESET ends */
+
+:root {
+	caret-color: var(--md-sys-color-primary);
+}
+
+*::selection {
+	background-color: color-mix(in srgb, var(--md-sys-color-primary), transparent 82%);
 }
