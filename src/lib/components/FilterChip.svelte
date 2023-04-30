@@ -39,11 +39,12 @@
 		align-items: center;
 		justify-content: center;
 		gap: 8px;
+
+		color: inherit;
 	}
 
-	.chip:hover .wrapper,
-	.chip:focus-visible .wrapper {
-		background-color: rgba(73, 69, 79, 8%); /* magic number by material */
+	.chip:hover,
+	.chip:focus-visible {
 		color: var(--md-sys-color-on-surface);
 	}
 
@@ -51,9 +52,17 @@
 		border-color: var(--md-sys-color-on-surface);
 	}
 
+	.chip:hover .wrapper,
+	.chip:focus-visible .wrapper {
+		background-color: rgba(73, 69, 79, 8%); /* magic number by material */
+	}
+
+	.chip:active {
+		color: var(--md-sys-color-on-surface);
+	}
+
 	.chip:active .wrapper {
 		background-color: rgba(73, 69, 79, 12%);
-		color: var(--md-sys-color-on-surface);
 	}
 
 	.selected {
@@ -70,6 +79,7 @@
 		box-shadow:
 			0px 1px 2px rgba(0, 0, 0, 0.3),
 			0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+		color: var(--md-sys-color-on-secondary-container);
 	}
 
 	.selected:hover .wrapper {
@@ -79,6 +89,7 @@
 	.selected:focus-visible,
 	.selected:active {
 		box-shadow: none;
+		color: var(--md-sys-color-on-secondary-container);
 	}
 
 	.selected:focus-visible .wrapper,
