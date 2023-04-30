@@ -8,7 +8,7 @@
 <button
 	class="md-label-large chip"
 	class:selected
-	on:click={() => selected = !selected}
+	on:click
 >
 	<span class="wrapper">
 		{#if selected}
