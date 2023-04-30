@@ -18,3 +18,10 @@
 		UNREACHABLE
 	{/if}
 </div>
+
+<style>
+	.icon {
+		color: inherit;
+		flex-shrink: 0;
+	}
+</style>
