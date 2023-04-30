@@ -1,0 +1,48 @@
+<script lang="ts">
+	import Icon from "./Icon.svelte";
+
+	export let input: string;
+	export let placeholder: string | undefined = undefined;
+</script>
+
+<div class="wrapper md-surface-container-high md-on-surface-text md-body-large">
+	<Icon icon="search" />
+	<input
+		type="text"
+		bind:value={input}
+		placeholder={placeholder}
+		class="input"
+	/>
+</div>
+
+<style>
+	.wrapper {
+		width: 100%;
+		height: 56px;
+		border-radius: 28px;
+		padding: 4px 16px;
+
+		display: flex;
+		flex-direction: row;
+		gap: 16px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.input {
+		background: none;
+		border: none;
+		color: inherit;
+		flex-grow: 1;
+		height: 100%;
+		padding: 0;
+	}
+
+	.input:focus-visible {
+		outline: none;
+	}
+
+	.input::placeholder {
+		color: var(--md-sys-color-on-surface-variant);
+	}
+</style>
