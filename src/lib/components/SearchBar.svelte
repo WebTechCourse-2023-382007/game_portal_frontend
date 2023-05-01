@@ -6,7 +6,7 @@
 </script>
 
 <div class="wrapper md-surface-container-high md-on-surface-text md-body-large">
-	<Icon icon="search" />
+	<Icon icon="search" --size="24px" />
 	<input
 		type="text"
 		bind:value={input}

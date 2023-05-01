@@ -1,4 +1,4 @@
-<svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<svg width="1em" height="1em" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 	<mask id="mask0_78_2673" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="25">
 		<rect x="0.759155" y="0.653839" width="24" height="24" fill="#D9D9D9"/>
 	</mask>

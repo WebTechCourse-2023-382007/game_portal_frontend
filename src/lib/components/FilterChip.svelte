@@ -13,7 +13,7 @@
 	<span class="wrapper">
 		{#if selected}
 			<div class="icon_wrapper">
-				<Icon icon="done" />
+				<Icon icon="done" --size="18px" />
 			</div>
 		{/if}
 		{text}
