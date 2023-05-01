@@ -21,6 +21,13 @@
 </button>
 
 <style>
+	.chip,
+	.wrapper {
+		transition-duration: 200ms;
+		transition-property: color, background-color, box-shadow, border-color;
+		transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+	}
+
 	.chip {
 		border: 1px solid var(--md-sys-color-outline);
 		border-radius: 100px;
