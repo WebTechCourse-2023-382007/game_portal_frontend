@@ -23,6 +23,6 @@
 	.icon {
 		color: inherit;
 		flex-shrink: 0;
-		font-size: var(--size);
+		font-size: var(--size, 24px);
 	}
 </style>
