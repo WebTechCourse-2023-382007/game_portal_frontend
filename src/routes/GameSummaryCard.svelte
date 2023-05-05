@@ -3,41 +3,37 @@
 	export let summary: GameSummary;
 </script>
 
-<a class="link" href={summary.id}>
-	<div class="card">
-		<div class="image_wrapper">
-			<img
-				class="image"
-				alt={`${summary.name} logo`}
-				src={summary.logoUrl}
-			/>
+<a class="card" href={summary.id} title="Перейти на страницу {summary.name}">
+	<div class="image_wrapper">
+		<img
+			class="image"
+			alt={`${summary.name} logo`}
+			src={summary.logoUrl}
+		/>
+	</div>
+	<div class="text">
+		<div class="text__heading">
+			<p class="md-on-surface-text md-title-large heading__name">
+				{summary.name}
+			</p>
+			<p class="md-on-surface-variant-text md-label-large heading__trivia">
+				{summary.releaseYear} • {summary.publisher}
+			</p>
 		</div>
-		<div class="text">
-			<div class="text__heading">
-				<p class="md-on-surface-text md-title-large heading__name">
-					{summary.name}
-				</p>
-				<p class="md-on-surface-variant-text md-label-large 	heading__trivia">
-					{summary.releaseYear} • {summary.publisher}
-				</p>
-			</div>
-			<ul class="text__tag_list">
-				{#each summary.tags as tag}
-					<li class="md-on-surface-text md-label-large tag_list__tag">
-						{tag}
-					</li>
-				{/each}
-			</ul>
-		</div>
+		<ul class="text__tag_list">
+			{#each summary.tags as tag}
+				<li class="md-on-surface-text md-label-large tag_list__tag">
+					{tag}
+				</li>
+			{/each}
+		</ul>
 	</div>
 </a>
 
 <style>
-	.link {
-		display: contents;
-	}
-
 	.card {
+		text-decoration: none;
+
 		padding: 16px;
 		width: 100%;
 		height: 130px; /* very bad */
@@ -49,6 +45,10 @@
 		display: flex;
 		flex-direction: row;
 		gap: 16px;
+	}
+
+	.card:focus {
+		outline: auto;
 	}
 
 	.image_wrapper {
