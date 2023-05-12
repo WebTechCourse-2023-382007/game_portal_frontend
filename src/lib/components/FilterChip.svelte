@@ -40,6 +40,10 @@
 		color: var(--md-sys-color-on-surface-variant);
 	}
 
+	.chip:hover {
+		cursor: pointer;
+	}
+
 	.wrapper {
 		width: 100%;
 		height: 100%;
