@@ -100,6 +100,7 @@
 	}
 
 	.tag_list__tag:not(:first-child)::before {
-		content: '•';
+		content: "•";	    /* For ones who doesn't support */
+		content: "•" / "";  /* Hide from screen reader */
 	}
 </style>
