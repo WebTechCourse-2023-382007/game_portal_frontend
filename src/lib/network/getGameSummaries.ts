@@ -12,7 +12,7 @@ export default async function getGameSummaries(): Promise<Response> {
 				name: "Overwatch 2",
 				releaseYear: 2022,
 				publisher: "Blizzard",
-				tags: ["Шутер", "Multiplayer", "Онлайн"],
+				tags: [7, 9, 10],
 				logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
 			},
 			{
@@ -20,7 +20,7 @@ export default async function getGameSummaries(): Promise<Response> {
 				name: "Overwatch 2",
 				releaseYear: 2022,
 				publisher: "Blizzard",
-				tags: ["Шутер", "Multiplayer", "Онлайн"],
+				tags: [7, 9, 10],
 				logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
 			},
 			{
@@ -28,7 +28,7 @@ export default async function getGameSummaries(): Promise<Response> {
 				name: "Overwatch 2",
 				releaseYear: 2022,
 				publisher: "Blizzard",
-				tags: ["Шутер", "Multiplayer", "Онлайн"],
+				tags: [7, 9, 10],
 				logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
 			},
 			{
@@ -36,7 +36,7 @@ export default async function getGameSummaries(): Promise<Response> {
 				name: "Overwatch 2",
 				releaseYear: 2022,
 				publisher: "Blizzard",
-				tags: ["Шутер", "Multiplayer", "Онлайн"],
+				tags: [7, 9, 10],
 				logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
 			},
 			{
@@ -44,41 +44,41 @@ export default async function getGameSummaries(): Promise<Response> {
 				name: "Overwatch 2",
 				releaseYear: 2022,
 				publisher: "Blizzard",
-				tags: ["Шутер", "Multiplayer", "Онлайн"],
+				tags: [7, 9, 10],
 				logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
 			},
-			{
-				id: "overwatch",
-				name: "Overwatch 2",
-				releaseYear: 2022,
-				publisher: "Blizzard",
-				tags: ["Шутер", "Multiplayer", "Онлайн"],
-				logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
-			},
-			{
-				id: "overwatch",
-				name: "Overwatch 2",
-				releaseYear: 2022,
-				publisher: "Blizzard",
-				tags: ["Шутер", "Multiplayer", "Онлайн"],
-				logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
-			},
-			{
-				id: "overwatch",
-				name: "Overwatch 2",
-				releaseYear: 2022,
-				publisher: "Blizzard",
-				tags: ["Шутер", "Multiplayer", "Онлайн"],
-				logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
-			},
-			{
-				id: "overwatch",
-				name: "Overwatch 2",
-				releaseYear: 2022,
-				publisher: "Blizzard",
-				tags: ["Шутер", "Multiplayer", "Онлайн"],
-				logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
-			},
+			// {
+			// 	id: "overwatch",
+			// 	name: "Overwatch 2",
+			// 	releaseYear: 2022,
+			// 	publisher: "Blizzard",
+			// 	tags: [7, 9, 10],
+			// 	logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
+			// },
+			// {
+			// 	id: "overwatch",
+			// 	name: "Overwatch 2",
+			// 	releaseYear: 2022,
+			// 	publisher: "Blizzard",
+			// 	tags: [7, 9, 10],
+			// 	logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
+			// },
+			// {
+			// 	id: "overwatch",
+			// 	name: "Overwatch 2",
+			// 	releaseYear: 2022,
+			// 	publisher: "Blizzard",
+			// 	tags: [7, 9, 10],
+			// 	logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
+			// },
+			// {
+			// 	id: "overwatch",
+			// 	name: "Overwatch 2",
+			// 	releaseYear: 2022,
+			// 	publisher: "Blizzard",
+			// 	tags: [7, 9, 10],
+			// 	logoUrl: "https://upload.wikimedia.org/wikipedia/commons/7/72/Overwatch_2_full_logo.svg"
+			// },
 		]
 	}
 }
