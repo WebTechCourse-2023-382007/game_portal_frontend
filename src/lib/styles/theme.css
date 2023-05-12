@@ -58,3 +58,7 @@ button {
 *::selection {
 	background-color: color-mix(in srgb, var(--md-sys-color-primary), transparent 82%);
 }
+
+.gp-display-contents {
+	display: contents;
+}
