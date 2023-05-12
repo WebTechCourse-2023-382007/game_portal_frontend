@@ -44,5 +44,6 @@
 
 	.input::placeholder {
 		color: var(--md-sys-color-on-surface-variant);
+		opacity: 0.5;
 	}
 </style>
