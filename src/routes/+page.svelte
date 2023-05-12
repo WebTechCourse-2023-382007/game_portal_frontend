@@ -3,7 +3,7 @@
 	import SearchBar from "$lib/components/SearchBar.svelte";
 	import GameSummaryCard from "./GameSummaryCard.svelte";
 	import type { GameSummary, Tag } from "$lib/types";
-    import { queryParam } from "sveltekit-search-params";
+	import { queryParam } from "sveltekit-search-params";
 	import FilledButton from "$lib/components/FilledButton.svelte";
 
 	export let data;
