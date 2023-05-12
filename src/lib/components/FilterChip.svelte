@@ -31,11 +31,11 @@
 		transition-duration: 200ms;
 		transition-property: color, background-color, box-shadow, border-color;
 		transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+		border-radius: 8px;
 	}
 
 	.chip {
 		border: 1px solid var(--md-sys-color-outline);
-		border-radius: 100px;
 		background-color: transparent;
 		color: var(--md-sys-color-on-surface-variant);
 	}
@@ -43,7 +43,6 @@
 	.wrapper {
 		width: 100%;
 		height: 100%;
-		border-radius: 100px;
 		padding: 7px 15px;
 
 		display: flex;
