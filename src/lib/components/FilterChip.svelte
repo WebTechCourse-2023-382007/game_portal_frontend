@@ -21,8 +21,8 @@
 <style>
 	.control {
 		position: absolute;
-		width: 0;
-		height: 0;
+		block-size: 0;
+		inline-size: 0;
 		opacity: 0;
 	}
 	
@@ -45,8 +45,8 @@
 	}
 
 	.wrapper {
-		width: 100%;
-		height: 100%;
+		inline-size: 100%;
+		block-size: 100%;
 		padding: 7px 15px;
 
 		display: flex;
@@ -118,6 +118,6 @@
 	}
 
 	.icon_wrapper {
-		margin-left: -4px;
+		margin-inline-start: -4px;
 	}
 </style>

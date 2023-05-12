@@ -136,12 +136,12 @@
 		align-items: stretch;
 		justify-content: flex-start;
 		gap: 48px;
-		width: 100%;
-		height: 100%;
+		inline-size: 100%;
+		block-size: 100%;
 	}
 
 	.header {
-		margin-top: 264px;
+		margin-block-start: 264px;
 
 		display: flex;
 		flex-direction: column;
@@ -170,8 +170,8 @@
 	}
 
 	.search__bar {
-		width: 100%;
-		max-width: 600px;
+		inline-size: 100%;
+		max-inline-size: 600px;
 	}
 
 	.tag_list {
@@ -182,7 +182,7 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 12px;
-		max-width: 770px;
+		max-inline-size: 770px;
 	}
 
 	.game_summary_list {
@@ -196,12 +196,12 @@
 
 	.game_summary_list__item {
 		display: block;
-		width: 100%;
-		max-width: 560px;
+		inline-size: 100%;
+		max-inline-size: 560px;
 	}
 
 	.game_summary_list__item:last-child {
-		margin-bottom: 20px;
+		margin-block-end: 20px;
 	}
 
 	.unknown-game-message {

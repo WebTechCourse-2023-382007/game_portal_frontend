@@ -17,8 +17,8 @@
 
 <style>
 	.wrapper {
-		width: 100%;
-		height: 56px;
+		inline-size: 100%;
+		block-size: 56px;
 		border-radius: 28px;
 		padding: 4px 16px;
 
@@ -34,7 +34,7 @@
 		border: none;
 		color: inherit;
 		flex-grow: 1;
-		height: 100%;
+		block-size: 100%;
 		padding: 0;
 	}
 

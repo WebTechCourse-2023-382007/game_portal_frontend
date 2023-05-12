@@ -35,8 +35,8 @@
 		text-decoration: none;
 
 		padding: 16px;
-		width: 100%;
-		height: 130px; /* very bad */
+		inline-size: 100%;
+		block-size: 130px; /* very bad */
 
 		border: 1px solid var(--md-sys-color-outline-variant);
 		border-radius: 12px;
@@ -52,8 +52,8 @@
 	}
 
 	.image_wrapper {
-		width: 220px;
-		margin-left: -16px;
+		inline-size: 220px;
+		margin-inline-start: -16px;
 
 		display: flex;
 		align-items: center;
@@ -63,7 +63,7 @@
 	}
 
 	.image {
-		max-height: 100%;
+		max-block-size: 100%;
 		object-fit: scale-down;
 		overflow: hidden;
 	}
