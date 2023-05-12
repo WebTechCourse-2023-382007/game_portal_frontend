@@ -4,6 +4,7 @@
 	import GameSummaryCard from "./GameSummaryCard.svelte";
 	import type { GameSummary, Tag } from "$lib/types";
     import { queryParam } from "sveltekit-search-params";
+	import FilledButton from "$lib/components/FilledButton.svelte";
 
 	export let data;
 
@@ -106,13 +107,20 @@
 		</form>
 
 		<section class="gp-display-contents">
-			<ul class="game_summary_list">
-				{#each filteredSummaries as summary}
-					<li class="game_summary_list__item">
-						<GameSummaryCard {summary} />
-					</li>
-				{/each}
-			</ul>
+			{#if filteredSummaries.length !== 0}
+				<ul class="game_summary_list">
+					{#each filteredSummaries as summary}
+						<li class="game_summary_list__item">
+							<GameSummaryCard {summary} />
+						</li>
+					{/each}
+				</ul>
+			{:else}
+				<div class="unknown-game-message">
+					<p class="md-body-large md-on-surface-text">Такой игры ещё нет. Хотите добавить?</p>
+					<FilledButton text="Добавить" />
+				</div>
+			{/if}
 		</section>
 	</main>
 </div>
@@ -194,5 +202,17 @@
 
 	.game_summary_list__item:last-child {
 		margin-bottom: 20px;
+	}
+
+	.unknown-game-message {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+	}
+
+	.unknown-game-message p {
+		text-align: center;
 	}
 </style>
