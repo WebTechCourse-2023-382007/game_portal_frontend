@@ -12,7 +12,7 @@
 	margin: 0;
 }
 html, body {
-	height: 100%;
+	min-block-size: 100%;
 }
 body {
 	line-height: 1.5;
@@ -20,7 +20,7 @@ body {
 }
 img, picture, video, canvas, svg {
 	display: block;
-	max-width: 100%;
+	max-inline-size: 100%;
 }
 input, button, textarea, select {
 	font: inherit;
@@ -37,4 +37,28 @@ p, h1, h2, h3, h4, h5, h6 {
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
 	}
+}
+
+/* Credit ends */
+
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	outline: inherit;
+	padding: 0;
+}
+
+/* RESET ends */
+
+:root {
+	caret-color: var(--md-sys-color-primary);
+}
+
+*::selection {
+	background-color: color-mix(in srgb, var(--md-sys-color-primary), transparent 82%);
+}
+
+.gp-display-contents {
+	display: contents;
 }
