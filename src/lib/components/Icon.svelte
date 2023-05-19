@@ -1,10 +1,11 @@
 <script context="module" lang="ts">
-	export type Icons = "done" | "search";
+	export type Icons = "done" | "search" | "edit";
 </script>
 
 <script lang="ts">
 	import DoneIcon from "$lib/icons/DoneIcon.svelte";
 	import SearchIcon from "$lib/icons/SearchIcon.svelte";
+	import EditIcon from "$lib/icons/EditIcon.svelte";
 
 	export let icon: Icons;
 </script>
@@ -14,6 +15,8 @@
 		<DoneIcon />
 	{:else if icon === "search"}
 		<SearchIcon />
+	{:else if icon === "edit"}
+		<EditIcon />
 	{:else}
 		UNREACHABLE
 	{/if}
