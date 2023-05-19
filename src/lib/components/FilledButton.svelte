@@ -9,7 +9,9 @@
 <button class="md-primary md-on-primary-text md-label-large button" on:click>
 	<span class="wrapper">
 		{#if icon !== null}
-			<Icon {icon} />
+			<div class="icon_wrapper">
+				<Icon --size="18px" {icon} />
+			</div>
 		{/if}
 		{text}
 	</span>
@@ -57,5 +59,9 @@
 	.button:focus-visible .wrapper,
 	.button:active .wrapper {
 		background-color: rgba(255, 255, 255, 12%);
+	}
+
+	.icon_wrapper {
+		margin-left: -8px;
 	}
 </style>
