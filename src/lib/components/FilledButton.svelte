@@ -22,7 +22,7 @@
 		padding: 0;
 		margin: 0;
 
-		transition: all 200ms ease-in-out;
+		transition: all 200ms var(--gp-material-bezier);
 	}
 
 	.wrapper {

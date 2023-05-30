@@ -16,7 +16,7 @@
 
 	transition-duration: 200ms;
 	transition-property: background-color, box-shadow;
-	transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+	transition-timing-function: var(--gp-material-bezier);
 
 	color: var(--md-sys-color-on-secondary-container);
 }

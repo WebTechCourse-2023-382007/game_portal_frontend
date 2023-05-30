@@ -53,6 +53,7 @@ button {
 
 :root {
 	caret-color: var(--md-sys-color-primary);
+	--gp-material-bezier: cubic-bezier(0.2, 0, 0, 1);
 }
 
 *::selection {

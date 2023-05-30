@@ -62,7 +62,7 @@
 
 		transition-duration: 200ms;
 		transition-property: top, padding-right, padding-left, left, font-size;
-		transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+		transition-timing-function: var(--gp-material-bezier);
 	}
 
 	.input:focus-visible + .label,
