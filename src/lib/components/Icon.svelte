@@ -1,8 +1,9 @@
 <script context="module" lang="ts">
-	export type Icons = "done" | "search" | "edit" | "add";
+	export type Icons = "done" | "search" | "edit" | "add" | "close";
 </script>
 
 <script lang="ts">
+	import CloseIcon from "$lib/icons/CloseIcon.svelte";
 	import DoneIcon from "$lib/icons/DoneIcon.svelte";
 	import SearchIcon from "$lib/icons/SearchIcon.svelte";
 	import EditIcon from "$lib/icons/EditIcon.svelte";
@@ -20,8 +21,10 @@
 		<EditIcon />
 	{:else if icon === "add"}
 		<AddIcon />
+	{:else if icon === "close"}
+		<CloseIcon />
 	{:else}
-		UNREACHABLE
+		INVALID
 	{/if}
 </div>
 
