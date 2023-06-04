@@ -6,7 +6,11 @@
 	export let trailingIcon: Icons | null = null;
 </script>
 
-<button class="md-label-large button" on:click>
+<button
+	class="md-label-large button"
+	type="button"
+	on:click
+>
 	{text}
 	{#if trailingIcon !== null}
 		<span class="icon_wrapper">

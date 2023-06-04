@@ -5,7 +5,11 @@
 	export let icon: Icons;
 </script>
 
-<button class="button" on:click>
+<button
+	class="button"
+	type="button"
+	on:click
+>
 	<Icon --size="22px" {icon} />
 </button>
 
