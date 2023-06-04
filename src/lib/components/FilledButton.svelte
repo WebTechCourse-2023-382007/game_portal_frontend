@@ -4,9 +4,10 @@
 
 	export let icon: Icons | null = null;
 	export let text: string;
+	export let type: "button" | "reset" | "submit" = "button";
 </script>
 
-<button class="md-primary md-on-primary-text md-label-large button" on:click>
+<button {type} class="md-primary md-on-primary-text md-label-large button" on:click>
 	<span class="wrapper">
 		{#if icon !== null}
 			<div class="icon_wrapper">
