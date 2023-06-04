@@ -10,10 +10,17 @@
 <script lang="ts">
 	export let label: string | null = null;
 	export let value: string;
+	export let name: string | null = null;
 </script>
 
 <div class="wrapper">
-	<input class="input" type="text" placeholder={label} bind:value>
+	<input
+		class="input"
+		type="text"
+		placeholder={label}
+		{name}
+		bind:value
+	>
 	{#if label !== null}
 		<span class="label" aria-hidden="true">{label}</span>
 	{/if}
