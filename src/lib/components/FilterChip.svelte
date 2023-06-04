@@ -30,7 +30,7 @@
 	.wrapper {
 		transition-duration: 200ms;
 		transition-property: color, background-color, box-shadow, border-color;
-		transition-timing-function: var(--gp-material-bezier);
+		transition-timing-function: var(--md-sys-motion-easing-standard);
 		border-radius: 8px;
 	}
 

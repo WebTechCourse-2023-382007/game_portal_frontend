@@ -45,7 +45,7 @@
 	.tab__label {
 		transition-duration: 200ms;
 		transition-property: background-color, color;
-		transition-timing-function: var(--gp-material-bezier);
+		transition-timing-function: var(--md-sys-motion-easing-standard);
 	}
 
 	.tab {
