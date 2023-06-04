@@ -64,12 +64,12 @@
 
 	.menu_wrapper {
 		position: absolute;
-		top: 100%;
-		left: 0;
+		inset-block-start: 100%;
+		inset-inline-start: 0;
 	}
 
 	.menu {
-		width: 200px;
+		inline-size: 200px;
 		padding: 8px 0;
 		box-shadow:
 			0 1px 2px rgba(0, 0, 0, 0.3),
@@ -78,11 +78,11 @@
 		background-color: var(--md-sys-color-surface-container);
 		margin: 0;
 		overflow-y: auto;
-		max-height: 256px;
+		max-block-size: 256px;
 	}
 
 	.menu::-webkit-scrollbar {
-		width: 12px;
+		inline-size: 12px;
 	}
 
 	.menu::-webkit-scrollbar-track {
@@ -100,7 +100,7 @@
 
 	.menu__item {
 		display: block;
-		width: 100%;
+		inline-size: 100%;
 		padding: 12px;
 		text-align: left;
 		color: var(--md-sys-color-on-surface);
