@@ -3,11 +3,13 @@
 	import type { Icons } from "$lib/components/Icon.svelte";
 
 	export let icon: Icons;
+	export let label: string | null = null;
 </script>
 
 <button
 	class="button"
 	type="button"
+	aria-label={label}
 	on:click
 >
 	<Icon --size="22px" {icon} />

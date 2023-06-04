@@ -97,7 +97,11 @@
 						items={menuItems}
 						onItemSelect={(key) => selectedTags = [...selectedTags, key]}
 					>
-						<TonalIconButton icon="add" on:click={() => showMenu = !showMenu} />
+						<TonalIconButton
+							icon="add"
+							label="Добавить тег"
+							on:click={() => showMenu = !showMenu}
+						/>
 					</Menu>
 				{/if}
 			</section>
