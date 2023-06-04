@@ -80,7 +80,7 @@
 	}
 
 	.tab__label {
-		height: 100%;
+		block-size: 100%;
 		color: inherit;
 
 		display: flex;
