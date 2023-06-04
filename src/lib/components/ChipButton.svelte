@@ -1,9 +1,18 @@
 <script lang="ts">
+	import Icon from "$lib/components/Icon.svelte";
+	import type { Icons } from "$lib/components/Icon.svelte";
+
 	export let text: string;
+	export let trailingIcon: Icons | null = null;
 </script>
 
 <button class="md-label-large button" on:click>
 	{text}
+	{#if trailingIcon !== null}
+		<span class="icon_wrapper">
+			<Icon --size="18px" icon={trailingIcon} />
+		</span>
+	{/if}
 </button>
 
 <style>
@@ -19,6 +28,12 @@
 	transition-timing-function: var(--gp-material-bezier);
 
 	color: var(--md-sys-color-on-secondary-container);
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
 }
 
 .button:hover {
@@ -34,5 +49,9 @@
 	box-shadow:
 		0 1px 2px rgba(0, 0, 0, 0.3),
 		0 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+.icon_wrapper {
+	margin-right: -4px;
 }
 </style>
