@@ -29,8 +29,8 @@
 <style>
 	.wrapper {
 		position: relative;
-		width: 100%;
-		height: 100%;
+		inline-size: 100%;
+		block-size: 100%;
 	}
 
 	.input,
@@ -48,7 +48,7 @@
 	}
 
 	.input {
-		width: 100%;
+		inline-size: 100%;
 		padding: 16px;
 		background-color: inherit;
 		border: none;
@@ -94,8 +94,8 @@
 		color: var(--md-sys-color-on-surface-variant);
 		position: absolute;
 
-		top: 16px;
-		left: 16px;
+		inset-block-start: 16px;
+		inset-inline-start: 16px;
 
 		pointer-events: none;
 	}
@@ -108,8 +108,8 @@
 		font-weight: var(--md-sys-typescale-body-small-font-weight);
 		font-size: var(--md-sys-typescale-body-small-font-size);
 
-		top: -9px;
-		left: 12px;
+		inset-block-start: -9px;
+		inset-inline-start: 12px;
 
 		background-color: var(--background-color);
 		padding: 0 4px;
