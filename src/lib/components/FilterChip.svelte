@@ -30,7 +30,7 @@
 	.wrapper {
 		transition-duration: 200ms;
 		transition-property: color, background-color, box-shadow, border-color;
-		transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+		transition-timing-function: var(--md-sys-motion-easing-standard);
 		border-radius: 8px;
 	}
 
@@ -95,8 +95,8 @@
 
 	.checked:hover {
 		box-shadow:
-			0px 1px 2px rgba(0, 0, 0, 0.3),
-			0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+			0 1px 2px rgba(0, 0, 0, 0.3),
+			0 1px 3px 1px rgba(0, 0, 0, 0.15);
 		color: var(--md-sys-color-on-secondary-container);
 	}
 
